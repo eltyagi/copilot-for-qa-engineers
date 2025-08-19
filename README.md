@@ -67,6 +67,32 @@ This application has been purposefully built with several issues for QA engineer
 
 ## Testing
 
+This project now includes a comprehensive testing setup with unit tests and E2E tests.
+
+### Quick Testing Commands
+
+```bash
+# Run all tests
+npm test
+
+# Run unit tests only
+npm run test:unit
+
+# Run E2E tests only
+npm run test:e2e
+
+# Verify setup
+./verify-setup.sh
+```
+
+### Testing Stack
+
+- **Backend Unit Tests**: Vitest with supertest for API testing
+- **Frontend Unit Tests**: Jest with React Testing Library
+- **E2E Tests**: Playwright for browser automation
+
+For detailed testing documentation, see [TESTING.md](TESTING.md).
+
 ### Backend Tests
 
 Run backend tests with:
@@ -97,4 +123,7 @@ As a QA engineer, you can use this project to:
 
 - Backend: Node.js, Express, SQLite
 - Frontend: React
-- Testing: Jest, React Testing Library
+- Testing: 
+  - **Unit Tests**: Vitest (backend), Jest + React Testing Library (frontend)
+  - **E2E Tests**: Playwright
+  - **API Testing**: Supertest (configured for backend)

@@ -1,0 +1,8 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="3.538422">
+<testsuite name="setup-verification.spec.js" timestamp="2025-08-19T13:07:12.765Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.293" errors="0">
+<testcase name="Playwright Setup Verification › should verify Playwright is working" classname="setup-verification.spec.js" time="0.984">
+</testcase>
+<testcase name="Playwright Setup Verification › should verify browser automation works" classname="setup-verification.spec.js" time="0.309">
+</testcase>
+</testsuite>
+</testsuites>

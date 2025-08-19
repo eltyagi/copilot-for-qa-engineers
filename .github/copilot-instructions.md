@@ -4,6 +4,10 @@
 
 This is a sample Calculator application with a Node.js backend, React frontend, and SQLite database for storing operation history. The project is intentionally designed with gaps and issues for QA engineers to practice testing.
 
+# General Instructions
+- Use Vitest for unit tests
+- User playwright for integration tests
+
 ## Project Structure
 
 - `backend/` - Node.js Express server (port 3001)

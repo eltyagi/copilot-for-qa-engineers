@@ -33,8 +33,8 @@ describe('Calculator Component', () => {
     fireEvent.click(screen.getByText('2'));
     fireEvent.click(screen.getByText('3'));
     
-    const display = screen.getByClassName('display');
-    expect(display).toHaveTextContent('123');
+    const display = screen.getByText('123');
+    expect(display).toBeInTheDocument();
   });
   
   test('clear button resets display', () => {
@@ -44,7 +44,9 @@ describe('Calculator Component', () => {
     fireEvent.click(screen.getByText('2'));
     fireEvent.click(screen.getByText('Clear'));
     
-    const display = screen.getByClassName('display');
+    // After clear, display should be empty
+    const calculator = screen.getByRole('button', { name: '1' }).closest('.calculator');
+    const display = calculator.querySelector('.display');
     expect(display).toHaveTextContent('');
   });
   
